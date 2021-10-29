@@ -15,11 +15,15 @@
   <ul>
     <% skills.forEach(function(skill) { %>
       <li>
+        <form action="/skills/<%= skill._id %>?_method=DELETE" method="POST" class='delete-form'>
+          <button type="submit">X</button>
+        </form>
         <a href="/skills/<%= skill._id %>"><%= skill.text %></a>
           - 
         <%= skill.have ? 'yes' : 'no' %>
       </li>
     <% }) %>
   </ul>
+  <a href="/skills/new">Add Skill</a>
 </body>
 </html>
