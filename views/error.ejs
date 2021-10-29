@@ -4,12 +4,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Error! 🎊</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/stylesheets/error.css">
+  <title>Error!</title>
 </head>
 <body>
+  <img src="/images/skeleton.gif" alt="">
+  <h1>You've been spooked!</h1>
   <h1><%= message %></h1>
   <h2><%= error.status %></h2>
-  <pre><%= error.stack %></pre>
+  <!-- <pre><%= error.stack %></pre> -->
+  <a href="/">go home</a>
 </body>
 </html>
 
